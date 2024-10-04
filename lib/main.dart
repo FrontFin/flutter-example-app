@@ -44,13 +44,13 @@ class _WebViewPageState extends State<WebViewPage> {
         },
       )
       ..addJavaScriptChannel(
-        'ReactNativeWebView', // This will capture messages from window.ReactNativeWebView.postMessage
+        'ReactNativeWebView', 
         onMessageReceived: (JavaScriptMessage message) {
           _handleMessage(message.message);
         },
       )
       ..loadRequest(Uri.parse(
-          'https://web.meshconnect.com/b2b-iframe/e1880c6d-5af8-4634-3182-08dba58a99a5/broker-connect?auth_code=RPoKGKmIHkECWS53gmYFE2OYcAyXYb2rcx0Yd8c3adBXvmL7ZZTeDrOiN7RD_w7aATmIHeS5njs7smmEs9Javw&restrictMultipleAccounts=true&link_style=eyJwYyI6IiMwMzdGRkYiLCJwdCI6IiNGRkZGRkYiLCJzYyI6IiMwRUNBRTAiLCJzdCI6IiMwMDAwMDAiLCJiciI6NS4wMCwiaXIiOjAuMDAsImlvIjowLjM3MDAwMDAwLCJ0IjoibGFiZWwiLCJoYyI6ZmFsc2UsInRoIjpudWxsfQ%3d%3d&integration_id=47624467-e52e-4938-a41a-7926b6c27acf'));
+          'https://web.meshconnect.com/b2b-iframe/e1880c6d-5af8-4634-3182-08dba58a99a5/broker-connect?auth_code=8zZOLWuCH7U3YjD6Jqqx7VMCscZxEeHFLBDmakNlJV_kirH4WpNTTuUkG6MGkVBzFoO3A6MffPl9edqOgZ74TQ&restrictMultipleAccounts=true&link_style=eyJwYyI6IiMwMzdGRkYiLCJwdCI6IiNGRkZGRkYiLCJzYyI6IiMwRUNBRTAiLCJzdCI6IiMwMDAwMDAiLCJiciI6NS4wMCwiaXIiOjAuMDAsImlvIjowLjM3MDAwMDAwLCJ0IjoibGFiZWwiLCJoYyI6ZmFsc2UsInRoIjpudWxsfQ%3d%3d&integration_id=47624467-e52e-4938-a41a-7926b6c27acf'));
   }
 
   // Function to handle incoming JavaScript messages
